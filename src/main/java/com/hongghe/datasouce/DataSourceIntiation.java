@@ -7,6 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 
+/**
+ * 初始化数据连接成
+ *
+ * @author hongghe 09/07/2018
+ */
 public class DataSourceIntiation {
     @Autowired
     private DataSource dataSource;

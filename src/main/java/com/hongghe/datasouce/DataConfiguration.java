@@ -2,6 +2,7 @@ package com.hongghe.datasouce;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("datasource")
+@ConfigurationProperties(prefix = "datasource")
 public class DataConfiguration {
+
 }
