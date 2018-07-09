@@ -1,5 +1,6 @@
 package com.hongghe.datasouce.controller;
 
+import com.hongghe.datasouce.domain.ApiResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,4 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/home")
 public class HomepageController {
+
+    @RequestMapping("error")
+    public ApiResult errorPage() {
+        ApiResult apiResult = new ApiResult();
+        apiResult.setCode(-1);
+        apiResult.setMessage("fail");
+        return apiResult;
+    }
 }
