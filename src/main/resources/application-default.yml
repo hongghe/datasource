@@ -3,7 +3,7 @@ spring:
     active: 'default'
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/datesource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&useSSL=false&createDatabaseIfNotExist=true
     username: root
     password:
     schema:
@@ -22,4 +22,3 @@ server:
   port: 8080
   context-path: /
 
-datasource:
