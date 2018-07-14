@@ -12,7 +12,8 @@ import javax.sql.DataSource;
  *
  * @author hongghe 09/07/2018
  */
-public class DataSourceIntiation {
+public class DataSourceInitializer {
+
     @Autowired
     private DataSource dataSource;
 

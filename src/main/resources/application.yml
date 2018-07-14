@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: datasource.hongghe.com
+
+logging:
+  config: classpath:logback-spring.xml

@@ -17,7 +17,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class ApiResult<T> implements Serializable {
 
-    public static final long serialVersionUID = 1L;
+    private static final Long serialVersionUID = 1L;
+
     private Integer code = 1;
     private String message = "success";
     private T data = (T) Maps.newHashMap();
