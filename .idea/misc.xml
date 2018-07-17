@@ -5,6 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/redis/pom.xml" />
+        <option value="$PROJECT_DIR$/memcached/pom.xml" />
+        <option value="$PROJECT_DIR$/mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/mysql/pom.xml" />
       </list>
     </option>
   </component>
