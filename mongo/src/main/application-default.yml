@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: 'default'
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password:
+    schema:
+      - classpath:db/schema_drop.sql
+      - classpath:db/schema.sql
+    data:
+      - classpath:db/data.sql
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 0
+    timeout: 1000
+
+server:
+  port: 8080
+  context-path: /
+
+mongodemo:
+  mongoProperties:
+    id: 1231
+    username: root
+    password: root
