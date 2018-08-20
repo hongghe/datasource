@@ -5,5 +5,3 @@ package com.hongghe.redis.service;
  *
  * @author hongghe 19/07/2018
  */
-public class PackageInfo {
-}

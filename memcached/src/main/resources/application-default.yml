@@ -16,4 +16,14 @@ server:
   port: 8080
   servlet:
     context-path: /
-mysqldemo:
+
+memcacheddemo:
+  memcache:
+    servers: 127.0.0.1:11211
+    weights: 5
+    initConn: 20
+    minConn: 10
+    maxConn: 50
+    maintSleep: 3000
+    nagle: false
+    socketTO: 3000

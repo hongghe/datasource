@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Data
 @ConfigurationProperties(prefix = "memcache")
-public class MemcachedProperties {
+public class MemcachedProper {
         private String[] servers;
         private Integer[] weights;
         private int initConn;

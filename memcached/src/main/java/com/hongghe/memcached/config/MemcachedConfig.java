@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public  class MemcachedConfig {
 
     @Autowired
-    private MemcachedProperties memcachedProperties;
+    private MemcachedProper memcachedProperties;
 
     @Bean
     public SockIOPool sockIOPool(){

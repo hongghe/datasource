@@ -13,6 +13,16 @@ import org.springframework.context.annotation.Bean;
 public class MongoApplication {
 
 	@Bean
+	public MongoInitializer mongoInitializer() {
+		return new MongoInitializer();
+	}
+
+	@Bean
+	public MongowebConfig mongowebConfig() {
+		return new MongowebConfig();
+	}
+
+	@Bean
 	public MongoProperties mongoProperties() {
 		return new MongoProperties();
 	}

@@ -17,13 +17,15 @@ spring:
     password:
     database: 0
     timeout: 1000
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      username: root
+      password:
+      database: gis
 
 server:
   port: 8080
-  context-path: /
-
-mongodemo:
-  mongoProperties:
-    id: 1231
-    username: root
-    password: root
+  servlet:
+    context-path: /

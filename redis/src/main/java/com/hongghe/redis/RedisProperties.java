@@ -8,5 +8,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  *
  * @author hongghe 19/07/2018
  */
-@ConfigurationProperties("redisdemo")
+@ConfigurationProperties(prefix = "redisdemo")
 public class RedisProperties {
+}
