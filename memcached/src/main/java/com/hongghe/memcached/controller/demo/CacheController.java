@@ -18,7 +18,7 @@ public class CacheController {
     @Autowired
     private MemCachedClient memCachedClient;
 
-    @RequestMapping("/cacheSave")
+    @RequestMapping("cacheSave")
     public String cacheSave(@RequestParam(value="id", required=false, defaultValue="228")String id)
     {
         boolean i = memCachedClient.set("id", id, 1000);

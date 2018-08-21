@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 @Data
 public class ApiResult {
-    private final Integer code = ApiConstants.SUCCESS.code;
-    private final String message = ApiConstants.SUCCESS.message;
+    private final Integer code = ApiCode.SUCCESS.code;
+    private final String message = ApiCode.SUCCESS.message;
     private final Object data = new HashMap<>();
 }

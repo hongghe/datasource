@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 public class HelloController {
 
-    private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
     /**
      * The default of api for testing.
@@ -25,6 +25,7 @@ public class HelloController {
     @RequestMapping("")
     public ApiResult helloPage() {
         ApiResult apiResult = new ApiResult();
+        LOGGER.info("The interface api return result.");
         return apiResult;
     }
 }

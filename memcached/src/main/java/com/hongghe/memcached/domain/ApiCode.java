@@ -5,7 +5,7 @@ package com.hongghe.memcached.domain;
  *
  * @author hongghe 17/07/2018
  */
-public enum ApiConstants {
+public enum ApiCode {
     ERROR(-1, "error"),
     FAIL(0, "fail"),
     SUCCESS(1, "success");
@@ -13,7 +13,7 @@ public enum ApiConstants {
     public Integer code;
     public String message;
 
-    ApiConstants(Integer code, String message) {
+    ApiCode(Integer code, String message) {
         this.code = code;
         this.message = message;
     }

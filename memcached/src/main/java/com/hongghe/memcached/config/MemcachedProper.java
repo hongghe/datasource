@@ -2,16 +2,14 @@ package com.hongghe.memcached.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 /**
  * memcached properties.
  *
  * @author hongghe 19/07/2018
  */
-@Component
 @Data
-@ConfigurationProperties(prefix = "memcache")
+@ConfigurationProperties(prefix = "memcacheddemo")
 public class MemcachedProper {
         private String[] servers;
         private Integer[] weights;
